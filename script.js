@@ -310,11 +310,18 @@ if (carouselTrack && carouselSlides.length > 0) {
     
     // Auto-slide functionality (optional - can be removed if manual only)
     function startAutoSlide() {
-        autoSlideInterval = setInterval(nextSlide, 5000); // Change slide every 5 seconds
+        stopAutoSlide(); // Clear any existing timer first
+        autoSlideInterval = setTimeout(() => {
+            nextSlide(); // Advance to next slide
+            startAutoSlide(); // Reset timer after automatic slide
+        }, 8000); // Change slide every 8 seconds
     }
     
     function stopAutoSlide() {
-        clearInterval(autoSlideInterval);
+        if (autoSlideInterval) {
+            clearTimeout(autoSlideInterval);
+            autoSlideInterval = null;
+        }
     }
     
     // Event listeners for navigation buttons
