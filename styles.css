@@ -115,6 +115,14 @@ body {
     width: 100%;
 }
 
+.nav-link.active {
+    color: var(--primary-color);
+}
+
+.nav-link.active::after {
+    width: 100%;
+}
+
 .hamburger {
     display: none;
     flex-direction: column;
@@ -163,6 +171,25 @@ body {
     width: 100%;
     max-width: 500px;
     margin: 0 auto;
+}
+
+.carousel-title {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--text-secondary);
+    margin-bottom: 20px;
+    text-align: left;
+    font-style: italic;
+}
+
+.carousel-description {
+    font-size: 14px;
+    color: var(--text-secondary);
+    margin-top: 15px;
+    text-align: center;
+    min-height: 40px;
+    transition: opacity 0.3s ease;
+    line-height: 1.6;
 }
 
 .carousel-container {

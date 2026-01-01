@@ -69,18 +69,24 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 const sections = document.querySelectorAll('.section');
 const navLinks = document.querySelectorAll('.nav-link');
 
-window.addEventListener('scroll', () => {
+function updateActiveNavLink() {
     let current = '';
     const navHeight = navbar.offsetHeight;
+    const scrollPosition = window.pageYOffset;
     
-    sections.forEach(section => {
-        const sectionTop = section.offsetTop;
-        const sectionHeight = section.clientHeight;
-        
-        if (window.pageYOffset >= (sectionTop - navHeight - 100)) {
-            current = section.getAttribute('id');
-        }
-    });
+    // If we're at the very top, activate the first section (home)
+    if (scrollPosition < 100) {
+        current = sections[0] ? sections[0].getAttribute('id') : '';
+    } else {
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop;
+            const sectionHeight = section.clientHeight;
+            
+            if (scrollPosition >= (sectionTop - navHeight - 100)) {
+                current = section.getAttribute('id');
+            }
+        });
+    }
     
     navLinks.forEach(link => {
         link.classList.remove('active');
@@ -88,7 +94,13 @@ window.addEventListener('scroll', () => {
             link.classList.add('active');
         }
     });
-});
+}
+
+// Update on scroll
+window.addEventListener('scroll', updateActiveNavLink);
+
+// Update on initial page load
+updateActiveNavLink();
 
 // Experience tabs functionality
 const tabButtons = document.querySelectorAll('.tab-button');
@@ -250,6 +262,7 @@ const carouselSlides = document.querySelectorAll('.carousel-slide');
 const carouselDots = document.querySelectorAll('.carousel-dot');
 const prevBtn = document.querySelector('.carousel-btn-prev');
 const nextBtn = document.querySelector('.carousel-btn-next');
+const carouselDescription = document.querySelector('.carousel-description');
 
 let currentSlide = 0;
 let autoSlideInterval;
@@ -265,6 +278,16 @@ if (carouselTrack && carouselSlides.length > 0) {
         // Add active class to current slide and dot
         if (carouselSlides[index]) {
             carouselSlides[index].classList.add('active');
+            
+            // Update description if it exists
+            if (carouselDescription) {
+                const description = carouselSlides[index].getAttribute('data-description') || '';
+                carouselDescription.style.opacity = '0';
+                setTimeout(() => {
+                    carouselDescription.textContent = description;
+                    carouselDescription.style.opacity = '1';
+                }, 150);
+            }
         }
         if (carouselDots[index]) {
             carouselDots[index].classList.add('active');
