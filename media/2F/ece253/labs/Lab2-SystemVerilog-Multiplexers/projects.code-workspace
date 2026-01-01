@@ -1,0 +1,36 @@
+{
+	"folders": [
+		{
+			"path": "../../../../../../../projects"
+		},
+		{
+			"path": "../../../1W/esc190/C/labs"
+		},
+		{
+			"path": "../../../1W/esc190/C/assignemnts"
+		},
+		{
+			"path": "../../../1W/esc190/C/day 22 lecture"
+		},
+		{
+			"path": "../../../1W/esc190/C"
+		},
+		{
+			"path": "../../../1W/esc190/C/in class"
+		},
+		{
+			"path": "../../../../../../../Documents/project"
+		},
+		{
+			"path": "../../phy293/labs/lab1"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"autocomplete.h": "c"
+		}
+	}
+}

@@ -1,0 +1,28 @@
+module part1(input logic clock, reset, ParallelLoadn, RotateRight, ASRight,
+            input logic [3:0] Data_IN, output logic [3:0] Q);
+        
+        part1a u0(clock, reset, ParallelLoadn, RotateRight, Q[1], Q[3], Data_IN[0], Q[0]);
+        part1a u1(clock, reset, ParallelLoadn, RotateRight, Q[2], Q[0], Data_IN[1], Q[1]);
+        part1a u2(clock, reset, ParallelLoadn, RotateRight, Q[3], Q[1], Data_IN[2], Q[2]);
+        logic right_in3;
+        assign right_in3 = (ASRight)?Q[3]:Q[0];
+        part1a u3(clock, reset, ParallelLoadn, RotateRight, right_in3, Q[2], Data_IN[3], Q[3]);
+        
+endmodule
+
+
+module part1a(input logic clock, reset, ParallelLoadn, RotateRight, right, left, D, output logic Q);
+    logic in;
+    always_ff@(posedge clock) begin
+        if (reset)
+            Q<=1'b0;
+        else begin
+            in=(RotateRight)?right:left;
+            if (!ParallelLoadn)
+                Q<=D;
+            else
+                Q<=in;
+        end
+    end
+endmodule
+

@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sara Parvaresh Rizi - Aspiring Data Engineer & Researcher | Engineering Science Student at University of Toronto | Portfolio showcasing AI/ML projects, research experience, and achievements">
+    <title>Sara Parvaresh Rizi - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">SP</a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
+                <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+                <li class="nav-item"><a href="education-labs.html" class="nav-link">Labs & Coursework</a></li>
+                <li class="nav-item"><a href="additional-experience.html" class="nav-link">Additional</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-wrapper">
+                <div class="hero-content">
+                    <p class="hero-greeting">Hey!! I'm </p>
+                    <h1 class="hero-name">Sara Parvaresh Rizi </h1>
+                    <h2 class="hero-title">Aspiring Data Engineer & Doctor</h2>
+                    <p class="hero-description">
+                        I'm a passionate engineer with experience in research and data analysis, 
+                        currently a second-year Engineering Science student at the University of Toronto. I specialize in 
+                        AI model development, medical imaging, and building data-driven solutions. I'm very interested in healthcare as well, with ambitions to pursue an MD/PhD in the future.
+                        Currently seeking internship and full-time opportunities! :) 
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">View My Work</a>
+                        <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                    </div>
+                </div>
+                <div class="hero-carousel">
+                    <div class="carousel-container">
+                        <div class="carousel-track">
+                            <div class="carousel-slide active">
+                                <img src="media/frontpage1.jpeg" alt="Portfolio Image 1">
+                            </div>
+                        </div>
+                        <button class="carousel-btn carousel-btn-prev" aria-label="Previous image">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="15 18 9 12 15 6"></polyline>
+                            </svg>
+                        </button>
+                        <button class="carousel-btn carousel-btn-next" aria-label="Next image">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="9 18 15 12 9 6"></polyline>
+                            </svg>
+                        </button>
+                        <div class="carousel-dots">
+                            <span class="carousel-dot active" data-slide="0"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll down</span>
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="section-number">01.</span>
+                About Me
+            </h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        Hello! I'm Sara, a second-year Engineering Science student at the University of Toronto 
+                        with a passion for biotechnology and data engineering.
+                    </p>
+                    <p>
+                        I'm currently working on improving AI model accuracy for medical imaging, conducting 
+                        research on sustainable technologies, and developing full-stack applications. 
+                        Here are a few technologies I've been working with recently:
+                    </p>
+                    <ul class="skills-list">
+                        <li>Python & PyTorch</li>
+                        <li>JavaScript</li>
+                        <li>React & Node.js</li>
+                        <li>Neural ODEs & Stochastic DEs</li>
+                        <li>C</li>
+                        <li>System Verilog & Assembly (FPGA)</li>
+                        <li>Git & GitHub</li>
+                    </ul>
+                </div>
+                <div class="about-image">
+                    <div class="image-wrapper">
+                        <div class="image-placeholder">
+                            <img src="headshot.jpg" alt="Sara Parvaresh Rizi">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section experience">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="section-number">02.</span>
+                Where I've Worked
+            </h2>
+            <div class="experience-content">
+                <div class="experience-tabs">
+                    <button class="tab-button active" data-tab="tab1">NeurAITex</button>
+                    <button class="tab-button" data-tab="tab2">GEARS</button>
+                    <button class="tab-button" data-tab="tab3">CUCAI</button>
+                    <button class="tab-button" data-tab="tab4">Green Tech Lab</button>
+                    <button class="tab-button" data-tab="tab5">ESEC</button>
+                    <button class="tab-button" data-tab="tab6">YSJ</button>
+                    <button class="tab-button" data-tab="tab7">UTMIST</button>
+                    <button class="tab-button" data-tab="tab8">Additional</button>
+                </div>
+                <div class="experience-details">
+                    <div class="tab-content active" id="tab1">
+                        <h3 class="job-title">Research Assistant <span class="company">@ NeurAITex</span></h3>
+                        <p class="job-period">May 2025 - Present</p>
+                        <ul class="job-description">
+                            <li>Compared previous AI models' performance against newer ones to identify the best model for detecting discrepancies in medical imaging, improving accuracy in glaucoma detection</li>
+                            <li>Conducted research into previous works to construct literature reviews for future projects, providing a solid foundation for ongoing research initiatives</li>
+                            <li>Assisted PhDs by editing academic writing and code, which improved the clarity and functionality of research outputs and facilitated smoother project progress</li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="tab2">
+                        <h3 class="job-title">Academic Tutor <span class="company">@ GEARS</span></h3>
+                        <p class="job-period">Sep 2025 - Present</p>
+                        <ul class="job-description">
+                            <li>Guided weekly tutoring sessions for ~20 first-year Engineering Science students, using interactive problem-solving, Python notebooks, and project management tools to clarify core concepts</li>
+                            <li>Helped raise average exam scores and increased student confidence through personalized teaching approaches</li>
+                            <li>Taught first-year engineering physics, calculus, linear algebra, chemistry, and mechanics, improving students' grasp of complex concepts</li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="tab3">
+                        <h3 class="job-title">Marketing Director <span class="company">@ CUCAI</span></h3>
+                        <p class="job-period">May 2025 - Present</p>
+                        <ul class="job-description">
+                            <li>Developed and implemented a marketing strategy for the 2025-2026 season using association marketing techniques and analytical skills, targeting 350+ delegates, 25+ universities, and 20+ sponsors</li>
+                            <li>Increased engagement and attracted additional sponsorship interest through strategic content planning</li>
+                            <li>Built a content calendar in Excel and coordinated with product designers to deliver assets across email, social media, and Discord on schedule</li>
+                            <li>Collaborated with External Relations and Logistics teams to distribute conference information via Discord, improving information dissemination and delegate engagement</li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="tab4">
+                        <h3 class="job-title">Undergraduate Researcher <span class="company">@ Green Technology Laboratory</span></h3>
+                        <p class="job-period">May 2025 - Present</p>
+                        <ul class="job-description">
+                            <li>Conducted research on photothermal water purification using wood biochar monoliths, leading to improved methods for sustainable, solar-driven desalination techniques</li>
+                            <li>Participated in the Undergraduate Student Research Program (USRP) and presented findings at the University of Toronto Undergraduate Engineering Research Day, winning best podium in Chemical and Materials Engineering</li>
+                            <li>Performed material synthesis, spectroscopic analysis (FTIR, UVVis) and data interpretation using Microsoft Excel, confirming the feasibility of the biochar approach</li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="tab5">
+                        <h3 class="job-title">Director of Communications <span class="company">@ Engineering Science Education Conference</span></h3>
+                        <p class="job-period">May 2025 - Present</p>
+                        <ul class="job-description">
+                            <li>Led a team of Engineering Science students to plan and execute ESEC 2026, attracting 300+ attendees and 8 industry-leading speakers</li>
+                            <li>Enhanced the conference's reputation through strategic planning and execution</li>
+                            <li>Ensured the conference delivered insightful programming on emerging technologies, innovative research, and evolving career landscapes, leading to positive feedback from attendees</li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="tab6">
+                        <h3 class="job-title">Production Staff <span class="company">@ Young Scientists Journal</span></h3>
+                        <p class="job-period">Dec 2023 - Present</p>
+                        <ul class="job-description">
+                            <li>Organized production processes, ensuring timely publication across 50+ countries, which improved global reach and readership for 1.5+ million readers</li>
+                            <li>Analyzed production metrics with Excel and statistical methods to pinpoint bottlenecks, then implemented process changes that increased efficiency and improved output quality</li>
+                            <li>Allocated resources and coordinated schedules with the team, met all deadlines while preserving scientific accuracy, which boosted overall team performance</li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="tab7">
+                        <h3 class="job-title">First Year Intern <span class="company">@ UTMIST</span></h3>
+                        <p class="job-period">Sep 2024 - Present</p>
+                        <ul class="job-description">
+                            <li>Led marketing initiatives for UofT's ML club, engaging members across 8 departments and 24+ design teams</li>
+                            <li>Increased event attendance and cross-departmental projects through strategic outreach campaigns</li>
+                            <li>Applied research and communication skills to support machine learning projects and organize events, increasing active participation across the 2,200+ member AI/ML community</li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="tab8">
+                        <h3 class="job-title">Additional Experience</h3>
+                        <div style="color: var(--text-secondary); font-size: 18px; line-height: 1.8; margin-bottom: 30px;">
+                            <p>
+                                Below are additional experiences and past roles that demonstrate my diverse background and growth over time. These include earlier positions from high school, community involvement, and research projects that have contributed to my development.
+                            </p>
+                            <p style="margin-top: 15px;">
+                                These experiences showcase my journey across different fields including education, community service, AI research, and the arts.
+                            </p>
+                        </div>
+                        <div style="text-align: center; margin-top: 40px;">
+                            <a href="additional-experience.html" class="btn btn-primary">View All Additional Experience</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="section-number">03.</span>
+                Some Things I've Built
+            </h2>
+            <div class="projects-grid">
+                <div class="project-card featured">
+                    <div class="project-content">
+                        <p class="project-label">Featured Project</p>
+                        <h3 class="project-title">Forecasting Glioblastoma Tumour Growth with Neural and Stochastic DEs</h3>
+                        <div class="project-description">
+                            <p>
+                                Engineered a time-dependent Stochastic Differential Equation (SDE) using a modified Gompertz framework to simulate tumor proliferation and chemotherapy decay. Developed a HybridStateODE that combined Markov transition matrices with continuous dynamics to predict disease stage progression. Implemented and benchmarked Milstein, SRK, and Euler-Maruyama solvers using Monte Carlo simulations to quantify biological uncertainty.
+                            </p>
+                        </div>
+                        <ul class="project-tech">
+                            <li>Python</li>
+                            <li>PyTorch</li>
+                            <li>Neural ODEs</li>
+                            <li>Stochastic Calculus</li>
+                            <li>U-Net</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="media/MAT292_Group12_FinalReport.pdf" class="project-link" aria-label="View PDF Report" target="_blank" rel="noopener noreferrer">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                    <polyline points="14 2 14 8 20 8"></polyline>
+                                    <line x1="16" y1="13" x2="8" y2="13"></line>
+                                    <line x1="16" y1="17" x2="8" y2="17"></line>
+                                    <polyline points="10 9 9 9 8 9"></polyline>
+                                </svg>
+                                <span>View PDF Report</span>
+                            </a>
+                            <a href="https://github.com/snowxzf/MAT292_Project" class="project-link" aria-label="Link to GitHub" target="_blank" rel="noopener noreferrer">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                </svg>
+                                <span>Link to GitHub</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-image">
+                        <iframe src="media/MAT292_Group12_FinalReport.pdf#toolbar=0&view=FitH" type="application/pdf" width="100%" height="100%" style="border: none; border-radius: 5px;" title="Glioblastoma Project Report PDF">
+                            <p>Your browser does not support PDFs. <a href="media/MAT292_Group12_FinalReport.pdf" target="_blank">Click here to download the PDF</a>.</p>
+                        </iframe>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-content">
+                        <p class="project-label">Project</p>
+                        <h3 class="project-title">Cadence AI | Higgs Boson AI Hackathon</h3>
+                        <div class="project-description">
+                            <p>
+                                Developed a full-stack web application that translates song lyrics across languages with real-time karaoke functionality. Built and integrated backend systems using Node.js (Express) and Python (FastAPI) for audio processing and AI model communication, with Boson AI audio recognition and LLM models. Designed frontend-backend integration between React (Vite/Tailwind) and API endpoints for audio separation, translation, and real-time lyric synchronization features.
+                            </p>
+                        </div>
+                        <ul class="project-tech">
+                            <li>React</li>
+                            <li>Node.js</li>
+                            <li>FastAPI</li>
+                            <li>Python</li>
+                            <li>TailwindCSS</li>
+                            <li>LLM Integration</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="https://github.com/snowxzf/Higgs-Audio-Hackathon" class="project-link" aria-label="Link to GitHub" target="_blank" rel="noopener noreferrer">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                </svg>
+                                <span>Link to GitHub</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-image">
+                        <video width="100%" height="100%" controls style="border: none; border-radius: 5px; background-color: var(--bg-tertiary);">
+                            <source src="media/cadenceai_up.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-content">
+                        <p class="project-label">Project</p>
+                        <h3 class="project-title">LabPath Corti-Call Watch Proposal</h3>
+                        <div class="project-description">
+                            <p>
+                                Proposed a cortisol-monitoring watch called "Corti-Call" for individuals with Addison's Disease. The watch utilizes a gold nanoparticle (AuNP)-functionalized laser-induced graphene interdigitated electrode (LIG-IDE) and electrochemical impedance spectroscopy (EIS) to detect cortisol from a range of 0.1 pm to 100 nm in synthetic human sweat. Integrated various AI algorithms, including latent-based food recommendation system and RL-PPO algorithm for drug scheduling, with extensive research in metabolism, circadian rhythm, and regeneration in the endocrine system.
+                            </p>
+                        </div>
+                        <ul class="project-tech">
+                            <li>Biosensor Development</li>
+                            <li>Reinforcement Learning (RL-PPO)</li>
+                            <li>Latent-Factor Models</li>
+                            <li>Predictive Analytics</li>
+                            <li>Wearable Device Architecture</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="media/Team 18 - Proposal .pdf" class="project-link" aria-label="View Proposal PDF" target="_blank" rel="noopener noreferrer">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                    <polyline points="14 2 14 8 20 8"></polyline>
+                                    <line x1="16" y1="13" x2="8" y2="13"></line>
+                                    <line x1="16" y1="17" x2="8" y2="17"></line>
+                                    <polyline points="10 9 9 9 8 9"></polyline>
+                                </svg>
+                                <span>View Proposal PDF</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-image">
+                        <iframe src="media/Team 18 - Proposal .pdf#toolbar=0&view=FitH" type="application/pdf" width="100%" height="100%" style="border: none; border-radius: 5px;" title="Corti-Call Watch Proposal PDF">
+                            <p>Your browser does not support PDFs. <a href="media/Team 18 - Proposal .pdf" target="_blank">Click here to download the PDF</a>.</p>
+                        </iframe>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-content">
+                        <p class="project-label">Research Project</p>
+                        <h3 class="project-title">Photothermal Water Purification with Biochar</h3>
+                        <div class="project-description">
+                            <p>
+                                Conducted research on photothermal water purification using wood biochar monoliths, leading to improved methods for sustainable, solar-driven desalination techniques. Performed material synthesis, spectroscopic analysis (FTIR, UVVis) and data interpretation. Presented findings at the University of Toronto Undergraduate Engineering Research Day, winning best podium in Chemical and Materials Engineering.
+                            </p>
+                        </div>
+                        <ul class="project-tech">
+                            <li>Material Synthesis</li>
+                            <li>Spectroscopic Analysis</li>
+                            <li>Sustainable Technology</li>
+                            <li>Data Analysis</li>
+                            <li>Research</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="media/biochar/UnERD Podium Presentation.pdf" class="project-link" aria-label="View Presentation" target="_blank" rel="noopener noreferrer">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                    <polyline points="14 2 14 8 20 8"></polyline>
+                                    <line x1="16" y1="13" x2="8" y2="13"></line>
+                                    <line x1="16" y1="17" x2="8" y2="17"></line>
+                                    <polyline points="10 9 9 9 8 9"></polyline>
+                                </svg>
+                                <span>View Presentation PDF</span>
+                            </a>
+                            <a href="media/biochar/Abstract (1).pdf" class="project-link" aria-label="View Abstract" target="_blank" rel="noopener noreferrer">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                    <polyline points="14 2 14 8 20 8"></polyline>
+                                    <line x1="16" y1="13" x2="8" y2="13"></line>
+                                    <line x1="16" y1="17" x2="8" y2="17"></line>
+                                    <polyline points="10 9 9 9 8 9"></polyline>
+                                </svg>
+                                <span>View Abstract PDF</span>
+                            </a>
+                            <a href="media/biochar/Summer Onepager.pdf" class="project-link" aria-label="View One-Pager" target="_blank" rel="noopener noreferrer">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                                <span>View One-Pager PDF</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-image">
+                        <iframe src="media/biochar/UnERD Podium Presentation.pdf#toolbar=0&view=FitH" type="application/pdf" width="100%" height="100%" style="border: none; border-radius: 5px;" title="Biochar Research Presentation PDF">
+                            <p>Your browser does not support PDFs. <a href="media/biochar/UnERD Podium Presentation.pdf" target="_blank">Click here to download the PDF</a>.</p>
+                        </iframe>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-content">
+                        <p class="project-label">Project</p>
+                        <h3 class="project-title">Lego Building Solution & ToroLUG Community</h3>
+                        <div class="project-description">
+                            <p>
+                                Developed innovative building solutions and contributed to the ToroLUG (Toronto LEGO Users Group) community. Created a Request for Proposal (RFP) for a LEGO sorter system, focusing on automated sorting techniques and community engagement solutions.
+                            </p>
+                        </div>
+                        <ul class="project-tech">
+                            <li>Design</li>
+                            <li>Community Building</li>
+                            <li>Collaboration</li>
+                            <li>Project Management</li>
+                            <li>RFP Development</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="media/lego/RFP-ToroLUG-LEGO-Sorter (2).pdf" class="project-link" aria-label="View RFP" target="_blank" rel="noopener noreferrer">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                    <polyline points="14 2 14 8 20 8"></polyline>
+                                    <line x1="16" y1="13" x2="8" y2="13"></line>
+                                    <line x1="16" y1="17" x2="8" y2="17"></line>
+                                    <polyline points="10 9 9 9 8 9"></polyline>
+                                </svg>
+                                <span>View RFP PDF</span>
+                            </a>
+                            <a href="media/lego/T35 Poster v3.png" class="project-link" aria-label="View Poster" target="_blank" rel="noopener noreferrer">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                                <span>View Poster</span>
+                            </a>
+                            <a href="media/lego/Team 35- ToroLUG Community Profile.pdf" class="project-link" aria-label="View Community Profile" target="_blank" rel="noopener noreferrer">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                                <span>View Community Profile PDF</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-image">
+                        <iframe src="media/lego/RFP-ToroLUG-LEGO-Sorter (2).pdf#toolbar=0&view=FitH" type="application/pdf" width="100%" height="100%" style="border: none; border-radius: 5px;" title="Lego RFP PDF">
+                            <p>Your browser does not support PDFs. <a href="media/lego/RFP-ToroLUG-LEGO-Sorter (2).pdf" target="_blank">Click here to download the PDF</a>.</p>
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section skills">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="section-number">04.</span>
+                Skills & Technologies
+            </h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3 class="skill-category-title">Programming Languages</h3>
+                    <div class="skill-items">
+                        <span class="skill-item">Python</span>
+                        <span class="skill-item">JavaScript (ES6+)</span>
+                        <span class="skill-item">C</span>
+                        <span class="skill-item">Assembly</span>
+                        <span class="skill-item">System Verilog</span>
+                        <span class="skill-item">VHDL</span>
+                        <span class="skill-item">HTML5</span>
+                        <span class="skill-item">CSS3</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3 class="skill-category-title">Frameworks & Libraries</h3>
+                    <div class="skill-items">
+                        <span class="skill-item">PyTorch</span>
+                        <span class="skill-item">React</span>
+                        <span class="skill-item">Node.js</span>
+                        <span class="skill-item">Express</span>
+                        <span class="skill-item">FastAPI</span>
+                        <span class="skill-item">Neural ODEs</span>
+                        <span class="skill-item">NumPy</span>
+                        <span class="skill-item">SciPy</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3 class="skill-category-title">Tools & Technologies</h3>
+                    <div class="skill-items">
+                        <span class="skill-item">Git</span>
+                        <span class="skill-item">GitHub</span>
+                        <span class="skill-item">Figma</span>
+                        <span class="skill-item">MATLAB</span>
+                        <span class="skill-item">Microsoft Suite</span>
+                        <span class="skill-item">CAD</span>
+                        <span class="skill-item">LaTeX</span>
+                        <span class="skill-item">U-Net</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3 class="skill-category-title">Skills & Expertise</h3>
+                    <div class="skill-items">
+                        <span class="skill-item">Machine Learning</span>
+                        <span class="skill-item">Data Analysis</span>
+                        <span class="skill-item">Research</span>
+                        <span class="skill-item">Project Management</span>
+                        <span class="skill-item">Event Planning</span>
+                        <span class="skill-item">Marketing</span>
+                        <span class="skill-item">Teaching</span>
+                        <span class="skill-item">Communication</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section education">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="section-number">05.</span>
+                Education
+            </h2>
+            <div class="education-timeline">
+                <div class="education-item">
+                    <div class="education-year">Sep 2024 - Jun 2029</div>
+                    <div class="education-details">
+                        <h3 class="education-degree">Bachelor of Engineering - Engineering Science + PEY Co-op</h3>
+                        <p class="education-school">University of Toronto</p>
+                        <p class="education-description">
+                            <strong>GPA:</strong> 4.0<br>
+                            <strong>Awards:</strong> Fessedon-Trott Scholarship, Dean's Merit Award, Dean's List<br>
+                            <strong>Coursework:</strong> C, Python, VHDL, System Verilog
+                        </p>
+                    </div>
+                </div>
+                <div class="education-item">
+                    <div class="education-year">Sep 2020 - Jun 2024</div>
+                    <div class="education-details">
+                        <h3 class="education-degree">High School Diploma</h3>
+                        <p class="education-school">William Lyon Mackenzie Collegiate Institute</p>
+                        <p class="education-description">
+                            <strong>GPA:</strong> 4.0<br>
+                            <strong>Awards:</strong> Jim McQueen Excellence in Education Award, UofT National Book Award, Liberal Arts Award<br>
+                            <strong>Leadership:</strong> President of School Paper, President of Mock Trials, Arts Council Chair, Science Club Event Designer
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div style="margin-top: 50px;">
+                <a href="education-labs.html" class="btn btn-secondary">View Labs & Coursework</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="section-number">06.</span>
+                Get In Touch
+            </h2>
+            <div class="contact-content">
+                <p class="contact-description" style="text-align: left;">
+                    I'm currently looking for new opportunities, whether that's an internship,
+                    full-time position, or just a friendly chat. Feel free to reach out!
+                </p>
+                <div style="text-align: left; margin: 20px 0;">
+                    <a href="#" class="btn btn-primary contact-btn" id="email-btn">Say Hello</a>
+                </div>
+                <div class="social-links" style="justify-content: flex-start;">
+                    <a href="https://github.com/sarapr06" class="social-link" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                        </svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/sara-parvaresh-rizi-836929255/" class="social-link" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                            <rect x="2" y="9" width="4" height="12"></rect>
+                            <circle cx="4" cy="4" r="2"></circle>
+                        </svg>
+                    </a>
+                    <a href="#" class="social-link" id="email-link" aria-label="Email">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>Designed & Built by Sara Parvaresh</p>
+            <p class="footer-year">© 2025</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

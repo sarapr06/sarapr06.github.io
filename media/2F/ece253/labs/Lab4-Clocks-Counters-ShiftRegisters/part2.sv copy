@@ -1,0 +1,54 @@
+module part2
+#(parameter CLOCK_FREQUENCY=500)(
+    input logic ClockIn,
+    input logic Reset,
+    input logic [1:0] Speed,
+    output logic [3:0] CounterValue
+);
+    logic Enable;
+    RateDivider #(CLOCK_FREQUENCY) u0(ClockIn, Reset, Speed, Enable);
+    DisplayCounter u1(ClockIn, Reset, Enable, CounterValue);
+endmodule
+
+module RateDivider
+#(parameter CLOCK_FREQUENCY=500)(
+    input logic ClockIn,
+    input logic Reset,
+    input logic [1:0] Speed,
+    output logic Enable
+);
+    //need target count for each speed, where full speed = 1 cycle per enable, 1hz=1s, 0.5hz=2 seconds, 0.25hz=4 seconds
+    logic [$clog2(CLOCK_FREQUENCY*4)-1:0] counter;
+    logic [$clog2(CLOCK_FREQUENCY*4)-1:0] load_value;
+    always_comb begin
+        case(Speed)
+            2'b00: load_value=1; //full speed
+            2'b01: load_value = CLOCK_FREQUENCY-1; // once every second (or once every clock cycle)
+            2'b10: load_value = CLOCK_FREQUENCY *2-1;// twice as slow
+            2'b11: load_value = CLOCK_FREQUENCY *4-1; // four times as slow
+        endcase
+    end
+    always_ff@(posedge ClockIn) begin
+        if (Reset)
+            counter<= load_value; // back to start!! but minus one for minus the first clock edge
+        else if (counter == 0)
+            counter <= load_value; // reload the value each clock edge
+        else
+            counter <= counter -1; // count down
+    end
+    assign Enable = (counter ==0);
+endmodule
+
+module DisplayCounter (
+    input logic Clock,
+    input logic Reset,
+    input logic EnableDC,
+    output logic [3:0] CounterValue
+);
+    always_ff@(posedge Clock) begin
+        if (Reset)
+            CounterValue<=4'b0000;
+        else if (EnableDC)
+            CounterValue <= CounterValue+1'b1;
+    end
+endmodule
