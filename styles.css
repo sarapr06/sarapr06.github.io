@@ -165,6 +165,22 @@ body {
     max-width: 700px;
 }
 
+/* Hero Image */
+.hero-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.hero-image .image-wrapper {
+    width: 300px;
+    height: 300px;
+    position: relative;
+}
+
 /* Hero Carousel */
 .hero-carousel {
     position: relative;
@@ -1027,9 +1043,13 @@ body {
         gap: 40px;
     }
 
-    .hero-carousel {
+    .hero-image {
         max-width: 100%;
         order: -1;
+    }
+
+    .hero-carousel {
+        max-width: 100%;
     }
 
     .hero-buttons {
