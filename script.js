@@ -55,12 +55,31 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         
         if (target) {
             const navHeight = navbar.offsetHeight;
-            const targetPosition = target.offsetTop - navHeight;
             
-            window.scrollTo({
-                top: targetPosition,
-                behavior: 'smooth'
-            });
+            // For project cards, calculate precise position
+            if (target.classList && target.classList.contains('project-card')) {
+                // Get computed scroll-margin-top value (default 120px from CSS)
+                const computedStyle = window.getComputedStyle(target);
+                const scrollMarginTop = parseInt(computedStyle.scrollMarginTop) || 120;
+                
+                // Calculate target position accounting for navbar and scroll margin
+                const rect = target.getBoundingClientRect();
+                const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+                const targetPosition = rect.top + scrollTop - navHeight - scrollMarginTop;
+                
+                window.scrollTo({
+                    top: Math.max(0, targetPosition),
+                    behavior: 'smooth'
+                });
+            } else {
+                // For section links, use offset calculation
+                const targetPosition = target.offsetTop - navHeight;
+                
+                window.scrollTo({
+                    top: targetPosition,
+                    behavior: 'smooth'
+                });
+            }
         }
     });
 });

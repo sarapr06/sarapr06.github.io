@@ -151,7 +151,7 @@
             </h2>
             <div class="experience-content">
                 <div class="experience-tabs">
-                    <button class="tab-button active" data-tab="tab1">NeurAITex</button>
+                    <button class="tab-button active" data-tab="tab1">Research Assistant</button>
                     <button class="tab-button" data-tab="tab2">GEARS</button>
                     <button class="tab-button" data-tab="tab3">CUCAI</button>
                     <button class="tab-button" data-tab="tab4">Green Tech Lab</button>
@@ -162,13 +162,16 @@
                 </div>
                 <div class="experience-details">
                     <div class="tab-content active" id="tab1">
-                        <h3 class="job-title">Research Assistant <span class="company">@ NeurAITex</span></h3>
+                        <h3 class="job-title">Research Assistant <span class="company">@ Niloufar Delfan</span></h3>
                         <p class="job-period">May 2025 - Present</p>
                         <ul class="job-description">
-                            <li>Compared previous AI models' performance against newer ones to identify the best model for detecting discrepancies in medical imaging, improving accuracy in glaucoma detection</li>
-                            <li>Conducted research into previous works to construct literature reviews for future projects, providing a solid foundation for ongoing research initiatives</li>
-                            <li>Assisted PhDs by editing academic writing and code, which improved the clarity and functionality of research outputs and facilitated smoother project progress</li>
+                            <li>Conducted comprehensive literature reviews to support ongoing research initiatives, analyzing previous works to construct a solid foundation for future projects</li>
+                            <li>Developed an automated image preprocessing and deep learning pipeline for <a href="#glaucoma-project" style="color: var(--primary-color); text-decoration: none; border-bottom: 1px solid var(--primary-color); transition: all 0.3s ease;">Glaucoma detection</a> using VGG16 and multi-spectral analysis, exploring how different color transformations (RGB, GrayScale, HSV, CMYK) affect classification performance</li>
+                            <li>Implemented preprocessing techniques including noise removal, histogram equalization, and data augmentation, improving model accuracy in medical imaging applications</li>
                         </ul>
+                        <p style="color: var(--text-secondary); font-size: 14px; margin-top: 15px;">
+                            <strong>Contact:</strong> <a href="mailto:ndelfan@yorku.ca" style="color: var(--primary-color); text-decoration: none;">ndelfan@yorku.ca</a>
+                        </p>
                     </div>
                     <div class="tab-content" id="tab2">
                         <h3 class="job-title">Academic Tutor <span class="company">@ GEARS</span></h3>
@@ -415,6 +418,47 @@
                         <iframe src="media/biochar/UnERD Podium Presentation.pdf#toolbar=0&view=FitH" type="application/pdf" width="100%" height="100%" style="border: none; border-radius: 5px;" title="Biochar Research Presentation PDF">
                             <p>Your browser does not support PDFs. <a href="media/biochar/UnERD Podium Presentation.pdf" target="_blank">Click here to download the PDF</a>.</p>
                         </iframe>
+                    </div>
+                </div>
+
+                <div class="project-card" id="glaucoma-project">
+                    <div class="project-content">
+                        <p class="project-label">Research Project</p>
+                        <h3 class="project-title">Glaucoma Classification using VGG16 and Multi-Spectral Analysis</h3>
+                        <div class="project-description">
+                            <p>
+                                Implemented an automated image preprocessing and deep learning pipeline for Glaucoma detection using the Drishti-GS Retina Dataset. Explored how different color transformations (RGB, GrayScale, HSV, and CMYK) affect classification performance. Applied preprocessing techniques including median filtering, Gaussian blurring, histogram equalization, and data augmentation. Utilized transfer learning with pre-trained VGG16, fine-tuning with differential learning rates and class-weighted cross-entropy loss to handle dataset imbalance.
+                            </p>
+                        </div>
+                        <ul class="project-tech">
+                            <li>PyTorch</li>
+                            <li>Deep Learning</li>
+                            <li>Computer Vision</li>
+                            <li>Medical Imaging</li>
+                            <li>Transfer Learning</li>
+                            <li>Image Preprocessing</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="https://github.com/sarapr06/Glaucoma-Preprocessing" class="project-link" aria-label="View GitHub Repository" target="_blank" rel="noopener noreferrer">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                </svg>
+                                <span>View GitHub Repository</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-image">
+                        <div style="width: 100%; height: 100%; background: linear-gradient(135deg, var(--bg-tertiary) 0%, var(--bg-secondary) 100%); border-radius: 5px; display: flex; align-items: center; justify-content: center; padding: 40px;">
+                            <div style="text-align: center; color: var(--text-secondary);">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="margin-bottom: 20px; opacity: 0.5;">
+                                    <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                                    <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                                    <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                                </svg>
+                                <p style="font-size: 16px; margin: 0;">Medical Imaging Research</p>
+                                <p style="font-size: 14px; margin-top: 8px; opacity: 0.7;">Deep Learning for Healthcare</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
 

@@ -642,6 +642,10 @@ body {
     grid-template-columns: 1.5fr 1fr;
 }
 
+#glaucoma-project {
+    scroll-margin-top: 120px;
+}
+
 .project-label {
     color: var(--primary-color);
     font-size: 14px;
